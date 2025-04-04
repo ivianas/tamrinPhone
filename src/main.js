@@ -2,14 +2,14 @@
 let x = [
   {
     brand: "Apple",
-    price: "237",
+    price: "1299",
     img: "https://m.media-amazon.com/images/I/51fYXSnSu9L._AC_SY879_.jpg",
     model: "Apple iPhone 12",
     color: "bg-[#000000]",
   },
   {
     brand: "Apple",
-    price: "699",
+    price: "666",
     img: "./other/img/iphone/16.webp",
     model: "Apple iPhone 16",
     color: "bg-[#444444]",
@@ -51,7 +51,7 @@ let x = [
   },
   {
     brand: "Samsung",
-    price: "705",
+    price: "865",
     img: "./other/img/samsung/s22.webp",
     model: "Galexy S22",
     color: "bg-[#000000]",
@@ -65,7 +65,7 @@ let x = [
   },
   {
     brand: "Samsung",
-    price: "1400",
+    price: "1230",
     img: "./other/img/samsung/s24.webp",
     model: "Galexy S24",
     color: "bg-[#6e6575]",
@@ -170,7 +170,7 @@ let x = [
   },
   {
     brand: "Nokia",
-    price: "1070",
+    price: "1270",
     img: "./other/img/nokia/xr21.jpg",
     model: "XR21",
     color: "bg-[#000000]",
@@ -259,7 +259,7 @@ let PhoneLabel = async () => {
 
   z.forEach((elem) => {
     wrapper.innerHTML += `
-            <div class="phone-card w-[370px] !pt-[15px] rounded-[13px]  bg-[#ebeaea] h-[180px] flex gap-[15px]  flex-wrap justify-center ">
+            <div class="phone-card w-[370px] !pt-[15px] rounded-[13px]  bg-[#9eaac6] h-[180px] flex gap-[15px]  flex-wrap justify-center ">
 
  
 
@@ -270,7 +270,7 @@ let PhoneLabel = async () => {
         <div class="w-[180px]  relative h-[150px]  !mp-[20] gap-[10px] flex flex-col !pt-[25px]">
           <span class="model font-[f01] text-[20px]">${elem.model}</span>
           <span class="brand font-[f02] text-[#00000069] text-[13px]">${elem.brand}</span>
-          <span class="price font-[f01] text-[#ba1010] text-[12px]">${String(elem.price)+"$"}</span>
+          <span class="price font-[f01] text-[#ba1010] text-[12px]">${String(elem.price)+"Dollars"}</span>
           <div class="color-sample ${elem.color}  w-[20px] h-[20px] absolute bottom-0 right-0 rounded-[50%]"></div>
         </div>
 
